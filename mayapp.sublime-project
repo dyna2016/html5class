@@ -1,0 +1,37 @@
+{
+  "build_systems": [    
+    {
+      "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+      "name": "Node - Project",
+      "selector": "source.js",
+      "cmd": ["node", "$file"],
+    },
+  ],
+  "folders": [
+  {
+    "path": "bin"
+  },
+  {
+    "path": "public"
+  },
+  {
+    "path": "routes"
+  },
+  {
+    "path": "test"
+  },
+  {
+    "path": "views"
+  },
+  {
+    "path": "models"
+  },
+  {
+    "path": "config"
+  },
+  {
+    "path": ".",
+    "name": "root",
+    "folder_exclude_patterns": ["bin", "public", "routes", "test", "views", "models", "lib", "node_modules", "config"]
+  }]
+}
